@@ -1,0 +1,25 @@
+{
+  "name": "http-request-scheduler",
+  "version": "1.0.0",
+  "description": "API based on a class allowing to execute several HTTP(S) requests in a certain order",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -fr dist && tsc",
+    "lint": "eslint . --ext .ts",
+    "start": "node --async-stack-traces dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "author": "Aimen-Allah FTAITI",
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.46.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}
